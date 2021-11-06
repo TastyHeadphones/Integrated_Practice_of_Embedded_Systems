@@ -1,0 +1,7 @@
+{
+    "port" : "/dev/ttyS0", 
+    "baudrate" : 115200,
+    "bytesize" : 8, 
+    "timeout" : 2, 
+    "stopbits" : 1
+}
