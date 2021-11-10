@@ -1,4 +1,5 @@
 {
+    "portID" : "0x01",
     "port" : "/dev/ttyS0", 
     "baudrate" : 115200,
     "bytesize" : 8, 
