@@ -1,12 +1,15 @@
 import sys
 import json
 
-
-if __name__ == "__main__":
+def getinfo() -> dict :
     filename = sys.argv[1]
     print(filename)
     f = open(filename)
     lines = f.read()
-    dicta = json.loads(s = lines)
-    print(dicta)
+    infodict = json.loads(s = lines)
+    print(infodict)
     f.close()
+    return infodict
+
+if __name__ == "__main__":
+    userinfo = getinfo()

@@ -1,4 +1,4 @@
 {
     "instanceID" : "0x02",
-    "port" : "/dev/ttyS0"
+    "port" : "/dev/pts/2"
 }
