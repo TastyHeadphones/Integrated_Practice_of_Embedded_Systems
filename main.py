@@ -1,15 +1,12 @@
-import sys
-import json
+# import sys
+# import json
+from User import User
 
-def getinfo() -> dict :
-    filename = sys.argv[1]
-    print(filename)
-    f = open(filename)
-    lines = f.read()
-    infodict = json.loads(s = lines)
-    print(infodict)
-    f.close()
-    return infodict
+
 
 if __name__ == "__main__":
-    userinfo = getinfo()
+    # userinfo = getinfo()
+    # user = User(int(userinfo['instanceID'],0),userinfo['port'])
+    user = User()
+    user.print()
+    
