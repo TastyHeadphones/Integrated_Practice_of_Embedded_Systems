@@ -6,6 +6,7 @@ class User:
       userinfo = self.getinfo()
       self.instanceID = int(userinfo['instanceID'],0)
       self.port = userinfo['port']
+      print(f'Welcome to serial chat room 0x0{self.instanceID} {self.port}')
 
    def getinfo(self) -> dict :
       filename = sys.argv[1]
