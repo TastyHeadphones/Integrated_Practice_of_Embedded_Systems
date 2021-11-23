@@ -16,7 +16,7 @@ if __name__ == "__main__":
    
 
     while True:
-        time.sleep(1)
+        #time.sleep(1)
         serialTransceiver.sendMsg()
         # usermsg = input(f'0x0{user.instanceID}:')
         # ser.write(f'0x0{user.instanceID} {time.asctime( time.localtime(time.time()))}: {usermsg}\n'.encode('utf8'))
