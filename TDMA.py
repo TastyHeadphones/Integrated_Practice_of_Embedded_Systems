@@ -1,22 +1,14 @@
 import time
 
-class TDMA():
-    def __init__(self,timeInfo) -> None:
+def Send(interval,sendFunc):
+    while(True):
+        if(time.time() % 60 % 2  == interval):
+            sendFunc()
+            return
 
-        self.order = 0
-        self.timeInfo = timeInfo
-        self.TimeInterval = self.getTimeInterval()
+if __name__ == "__main__":
+    Send(0,lambda : print(time.time() % 60))
 
-    def getTimeInterval():
-        pass
-    
-    def instance(self):
-        self.order += 1       
-        return self.order
-
-    def isTimeVaild(order):
-        pass
-    
     
 
 

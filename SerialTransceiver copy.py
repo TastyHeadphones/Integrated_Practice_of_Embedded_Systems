@@ -49,8 +49,12 @@ class SerialTransceiver:
                 except:
                     pass
     
-    def sendFile(self):
-        pass
+    def sendFile(self,sourceID):
+        ser = self.serial
+        def serWrite():
+            TDMA.Send(self.user.instanceID,lambda: ser.write(f'0x0{self.user.instanceID} {time.asctime( time.localtime(time.time()))}: {usermsg}\n'.encode('utf8')))
+            print(f'0x0{self.user.instanceID} {time.asctime( time.localtime(time.time()))}: {usermsg}')
+
 
 if __name__ == "__main__":
     # s = SerialTransceiver('/dev/pts/5')

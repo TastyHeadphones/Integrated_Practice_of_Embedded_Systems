@@ -13,6 +13,6 @@ Atlas 200DK 嵌入式系统实验
 
 `python3 main.py userinfo1.json`
 
-`python3 main.py userinfo1.2son`
+`python3 main.py userinfo2.json`
 
 3.在shell中输入信息即可发送
